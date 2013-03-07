@@ -1,0 +1,37 @@
+unit conversions
+
+* kWh to Cal
+* kWh to Joule
+* Joule to kWh
+* Cal to kWh
+* Cal to Joule
+* Inches to meter
+* meters to inches
+* Feet to meter
+* Meter to feet
+* Pa to Atm
+* Atm to Pa
+* bar to Pa
+* Pa to bar
+* 
+
+
+Physical properties - Correlations - Auxiliary function
+
+* Ergun Equation (full)
+* Interfacial Area Density (spherical and nonspherical)
+* Hydraulic diameter (for square or rectangular)
+* Stored energy (mass * cp * delta_temp)
+* Sphere volume
+* Cube volume
+* Sphere surface area
+* Cylinder volume
+* Cylinder surface area
+* Pipe surface area
+* Circle area
+* Circle perimeter
+* Elipse area
+* Elipse perimeter
+* Arrhenius equation
+* Hydrostatic pressure
+* 
