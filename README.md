@@ -15,7 +15,7 @@ It contains functions that compute:
 
 To download the latest version of TEB (just the .xlam), click the link below:
 
-
+https://github.com/bbmorales/TheEngineeringBox/raw/master/distro/The%20Engineering%20Box%20-%20v1.00.xlam
 
 ********************** INSTALLING TEB ********************** 
 
@@ -39,7 +39,7 @@ You are set to go go go!
 
 The TEB manual can be downloaded in:
 
-£££££££££££££
+https://github.com/bbmorales/TheEngineeringBox/raw/master/docs/The%20Engineering%20Box%20Manual%20-%20v%201.00.pdf
 
 ********************** COLLABORATING WITH TEB ********************** 
 
@@ -51,11 +51,10 @@ Collaboration will be welcome!
 To collaborate with this project, please contact me:
 bayard.bmorales@gmail.com
 
-This project is hotsted in GitHub under the register
-£$£"$"£$"£$
-
+This project is hotsted in GitHub
+https://github.com/bbmorales/TheEngineeringBox
 ********************** VERSION HISTORY ********************** 
 
-v 1.00 - 06 March 2013
+v 1.00 - 07 March 2013
 
 * First release to public
