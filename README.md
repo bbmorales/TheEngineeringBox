@@ -11,35 +11,7 @@ It contains functions that compute:
 * Dimensionless number: Reynolds number, Archimedes number...
 * Physical properties: Ideal gas law, Air viscosity ...
 
-********************** DOWNLOADING TEB ********************** 
-
-To download the latest version of TEB (just the .xlam), click the link below:
-
-https://github.com/bbmorales/TheEngineeringBox/raw/master/distro/The%20Engineering%20Box%20-%20v1.00.xlam
-
-********************** INSTALLING TEB ********************** 
-
-1) Download the most recent version of TEB
-2) Copy it to add-in folder of Microsoft Excel
-
-Add-ins (*.xlam files) are installed by default in one of the following places:
-- The Library folder or one of its subfolders in the Microsoft Office/Office folder.
-- The Documents and Settings/<user name>/Application Data/Microsoft/AddIns folder.
-
-If you have trouble finding this folder, follow the procedure below:
-a) Open Microsoft Excel
-b) Click "File -> Save as..."
-c) In Type, select "Microsoft Add-in". When you do this, the path shown in the Save as window is the folder where you have to unzip TEB files.
-
-3) After copying the TEB file to the appropriate folder, open Microsoft Excel and click "File -> Options -> Add-ins -> Manage" and check the box The Engineering Box.
-
-You are set to go go go!
-
-********************** TEB MANUAL ********************** 
-
-The TEB manual can be downloaded in:
-
-https://github.com/bbmorales/TheEngineeringBox/raw/master/docs/The%20Engineering%20Box%20Manual%20-%20v%201.00.pdf
+Please visit http://theengineeringbox.wikispaces.com/ 
 
 ********************** COLLABORATING WITH TEB ********************** 
 
@@ -56,6 +28,8 @@ https://github.com/bbmorales/TheEngineeringBox
 
 ********************** VERSION HISTORY ********************** 
 
-v 1.00 - 07 March 2013
+v 1.01 - 06 May 2013
+* Several changes - new functions - minor corrections
 
+v 1.00 - 07 March 2013
 * First release to public
