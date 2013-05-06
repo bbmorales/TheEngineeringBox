@@ -1,10 +1,64 @@
-Attribute VB_Name = "Módulo1"
 Option Explicit
 
 ' ************************************************************************************************
 ' UNIT CONVERSION MODULE
 ' This module constains unit conversion functions
 '*************************************************************************************************
+
+'**********************************************************
+'LENGTH UNIT CONVERSION FUNCTIONS
+
+Public Function feetToMeter(length As Double)
+    '*****************************************************
+    ' Purpose: convert from feet (US) to meters (SI)
+    ' Inputs:
+    '           length in feet
+    ' Returns:   length in meters
+    '*****************************************************
+    ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
+
+    feetToMeter = 3.048 * 10 ^ -1 * length
+
+End Function
+
+Public Function meterToFeet(length As Double)
+    '*****************************************************
+    ' Purpose: convert from meters (SI) to feet (US)
+    ' Inputs:
+    '           length in meters
+    ' Returns:   length in feet
+    '*****************************************************
+    ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
+
+    meterToFeet = 3.2808 * length
+
+End Function
+
+Public Function inchToMeter(length As Double)
+    '*****************************************************
+    ' Purpose: convert from inches to meters (SI)
+    ' Inputs:
+    '           length in inches
+    ' Returns:   length in meters
+    '*****************************************************
+    ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
+
+    inchToMeter = (2.54 * 10 ^ -2) * length
+
+End Function
+
+Public Function meterToInch(length As Double)
+    '*****************************************************
+    ' Purpose: convert from inches to meters (SI)
+    ' Inputs:
+    '           length in meters
+    ' Returns:   length in inches
+    '*****************************************************
+    ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
+
+    meterToInch = ((2.54 * 10 ^ -2) ^ -1) * length
+
+End Function
 
 '**********************************************************
 'VOLUME UNIT CONVERSION FUNCTIONS
@@ -19,7 +73,8 @@ Public Function m3ToNm3(volume As Double, temperature As Double, pressure As Dou
     '           pressure in Pa
     ' Returns:   volume in Nm^3
     '*****************************************************
-
+    'Revised on 01 May 2013
+    
     m3ToNm3 = volume * (pressure / temperature) * (273.15 / 101325#)
 
 End Function
@@ -72,6 +127,18 @@ End Function
 '**********************************************************
 'PRESSURE UNIT CONVERSION FUNCTIONS
 
+Public Function paToMbar(pressure As Double)
+    '*****************************************************
+    ' Purpose: converts from Pa to mbar
+    ' Inputs:
+    '           pressure in Pa
+    ' Returns:   pressure in mbar
+    '*****************************************************
+
+    paToMbar = 10 ^ -2 * pressure
+
+End Function
+
 Public Function PaToMmH20(pressure As Double)
     '*****************************************************
     ' Purpose: converts from Pa to mmH20
@@ -93,6 +160,54 @@ Public Function mmH20ToPa(pressure As Double)
     '*****************************************************
 
     mmH20ToPa = 9.80642 * pressure
+
+End Function
+
+Public Function paToAtm(pressure As Double)
+    '*****************************************************
+    ' Purpose: converts from Pa to Atm
+    ' Inputs:
+    '           pressure in Pa
+    ' Returns:   pressure in Atm
+    '*****************************************************
+
+    paToAtm = (1.0135 * 10 ^ 5) ^ -1 * pressure
+
+End Function
+
+Public Function atmToPa(pressure As Double)
+    '*****************************************************
+    ' Purpose: converts from Atm to Pa
+    ' Inputs:
+    '           pressure in Atm
+    ' Returns:   pressure in Pa
+    '*****************************************************
+
+    atmToPa = (1.0135 * 10 ^ 5) * pressure
+
+End Function
+
+Public Function paToBar(pressure As Double)
+    '*****************************************************
+    ' Purpose: converts from Pa to Bar
+    ' Inputs:
+    '           pressure in Pa
+    ' Returns:   pressure in Bar
+    '*****************************************************
+
+    paToBar = (1# * 10 ^ 5) ^ -1 * pressure
+
+End Function
+
+Public Function barToPa(pressure As Double)
+    '*****************************************************
+    ' Purpose: converts from Bar to Pa
+    ' Inputs:
+    '           pressure in Bar
+    ' Returns:   pressure in Pa
+    '*****************************************************
+
+    barToPa = (1# * 10 ^ 5) * pressure
 
 End Function
 
@@ -118,6 +233,7 @@ Public Function CelsiusToKelvin(temperature As Double)
     '           temperature in Celsius
     ' Returns:   temperature in Kelvin
     '*****************************************************
+    ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
 
     CelsiusToKelvin = temperature + 273.15
 
@@ -147,6 +263,32 @@ Public Function KelvinToRankine(temperature As Double)
 
 End Function
 
+Public Function FahrenheitToKelvin(temperature As Double)
+    '*****************************************************
+    ' Purpose: converts from Fahrenheit to Kelvin
+    ' Inputs:
+    '           temperature in Fahrenheit
+    ' Returns:   temperature in Kelvin
+    '*****************************************************
+    ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
+
+    KelvinToRankine = (5 / 9) * (temperature + 459.67)
+
+End Function
+
+Public Function FahrenheitToCelsius(temperature As Double)
+    '*****************************************************
+    ' Purpose: converts from Fahrenheit to Celsius
+    ' Inputs:
+    '           temperature in Fahrenheit
+    ' Returns:   temperature in Celsius
+    '*****************************************************
+    ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
+
+    KelvinToRankine = (5 / 9) * (temperature - 32)
+
+End Function
+
 '**********************************************************
 'ENERGY UNIT CONVERSION FUNCTIONS
 
@@ -162,4 +304,63 @@ Public Function JouleTocal(energy As Double)
 
 End Function
 
+Public Function CalToJoule(energy As Double)
+    '*****************************************************
+    ' Purpose: converts energy from Calories to Joules
+    ' Inputs:
+    '           energy in Calories
+    ' Returns:   energy in Joules
+    '*****************************************************
+    ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
 
+    CalToJoule = 4.184 * energy
+
+End Function
+
+Public Function KwhToCal(energy As Double)
+    '*****************************************************
+    ' Purpose: converts energy from kWh to Calories
+    ' Inputs:
+    '           energy in kWh
+    ' Returns:   energy in Calories
+    '*****************************************************
+
+    KwhToCal = 3.6 * 10 ^ 3 * (1.987 / 8.314) * energy
+
+End Function
+
+Public Function KwhToJoule(energy As Double)
+    '*****************************************************
+    ' Purpose: converts energy from kWh to Joules
+    ' Inputs:
+    '           energy in kWh
+    ' Returns:   energy in Joule
+    '*****************************************************
+
+    KwhToJoule = 3.6 * 10 ^ 3 * energy
+
+End Function
+
+Public Function JouleToKwh(energy As Double)
+    '*****************************************************
+    ' Purpose: converts energy from Joule to kWh
+    ' Inputs:
+    '           energy in Joule
+    ' Returns:   energy in kWh
+    '*****************************************************
+
+    KwhToJoule = (3.6 * 10 ^ 3) ^ -1 * energy
+
+End Function
+
+Public Function CalToKwh(energy As Double)
+    '*****************************************************
+    ' Purpose: converts energy from Cal to kWh
+    ' Inputs:
+    '           energy in Calories
+    ' Returns:   energy in kWh
+    '*****************************************************
+
+    CalToKwh = 4.184 * 3.6 * 10 ^ 3 * energy
+
+End Function

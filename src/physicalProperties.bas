@@ -1,4 +1,3 @@
-Attribute VB_Name = "Módulo3"
 Option Explicit
 ' ************************************************************************************************
 ' PHYSICAL PROPERTIES FUNCTIONS AND CORRELATIONS
@@ -14,8 +13,9 @@ Public Function idealGasDensity(molarMass As Double, pressure As Double, tempera
     '           temperature in celsius
     ' Returns:   the gas density in kg/m^3
     '*****************************************************
+    'Revised on 01 May 2013
 
-    idealGasDensity = ((molarMass / 1000) * pressure) / (idealGasConstant * (temperature + 273.15))
+    idealGasDensity = ((molarMass / 1000) * pressure) / (idealGasConst * (temperature + 273.15))
 
 End Function
 
@@ -26,6 +26,7 @@ Public Function airViscosity(temperature As Double)
     '           temperature in celsius
     ' Returns:   air viscosity in kg m/s
     '*****************************************************
+    ' Revised in 01 May 2013
 
     Const sutherCons = 120
     Const refTemp = 524.07
@@ -35,7 +36,7 @@ Public Function airViscosity(temperature As Double)
 
     auxVar1 = temperature * 1.8 + 32 + 459.67
 
-    airViscosity = 0.000001 * refVisc * ((0.555 * refTemp + sutherCons) / (0.555 * auxVar1 + sutherCons)) _
+    airViscosity = 0.001 * refVisc * ((0.555 * refTemp + sutherCons) / (0.555 * auxVar1 + sutherCons)) _
     * (auxVar1 / refTemp) ^ (3 / 2)
 
 End Function

@@ -1,20 +1,5 @@
 unit conversions
 
-* kWh to Cal
-* kWh to Joule
-* Joule to kWh
-* Cal to kWh
-* Cal to Joule
-* Inches to meter
-* meters to inches
-* Feet to meter
-* Meter to feet
-* Pa to Atm
-* Atm to Pa
-* bar to Pa
-* Pa to bar
-* 
-
 
 Physical properties - Correlations - Auxiliary function
 
@@ -34,4 +19,5 @@ Physical properties - Correlations - Auxiliary function
 * Elipse perimeter
 * Arrhenius equation
 * Hydrostatic pressure
+* Calorific content methane (???) - check with Andre another spreadsheet
 * 
