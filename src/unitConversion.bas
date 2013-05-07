@@ -272,7 +272,7 @@ Public Function FahrenheitToKelvin(temperature As Double)
     '*****************************************************
     ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
 
-    KelvinToRankine = (5 / 9) * (temperature + 459.67)
+    FahrenheitToKelvin = (5 / 9) * (temperature + 459.67)
 
 End Function
 
@@ -285,7 +285,7 @@ Public Function FahrenheitToCelsius(temperature As Double)
     '*****************************************************
     ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
 
-    KelvinToRankine = (5 / 9) * (temperature - 32)
+    FahrenheitToCelsius = (5 / 9) * (temperature - 32)
 
 End Function
 
@@ -349,7 +349,7 @@ Public Function JouleToKwh(energy As Double)
     ' Returns:   energy in kWh
     '*****************************************************
 
-    KwhToJoule = (3.6 * 10 ^ 3) ^ -1 * energy
+    JouleToKwh = (3.6 * 10 ^ 3) ^ -1 * energy
 
 End Function
 
@@ -364,3 +364,4 @@ Public Function CalToKwh(energy As Double)
     CalToKwh = 4.184 * 3.6 * 10 ^ 3 * energy
 
 End Function
+
