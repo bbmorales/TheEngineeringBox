@@ -1,9 +1,13 @@
 unit conversions
+* psi to Pa
+* Pa to Psi
+* Liter to M3 (liquid)
 
 
 Physical properties - Correlations - Auxiliary function
 
 * Ergun Equation (full)
+* Stokes equation (creeping flow)
 * Interfacial Area Density (spherical and nonspherical)
 * Hydraulic diameter (for square or rectangular)
 * Stored energy (mass * cp * delta_temp)
@@ -19,5 +23,4 @@ Physical properties - Correlations - Auxiliary function
 * Elipse perimeter
 * Arrhenius equation
 * Hydrostatic pressure
-* Calorific content methane (???) - check with Andre another spreadsheet
-* 
+* High Heating Value correlation fuels
