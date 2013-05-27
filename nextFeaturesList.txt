@@ -14,16 +14,8 @@ Physical properties - Correlations - Auxiliary function
 * Interfacial Area Density (spherical and nonspherical)
 * Hydraulic diameter (for square or rectangular)
 * Stored energy (mass * cp * delta_temp)
-* Sphere volume
 * Cube volume
-* Sphere surface area
-* Cylinder volume
-* Cylinder surface area
 * Pipe surface area
-* Circle area
-* Circle perimeter
-* Elipse area
-* Elipse perimeter
 * Arrhenius equation
 * Hydrostatic pressure
 * High Heating Value correlation fuels
