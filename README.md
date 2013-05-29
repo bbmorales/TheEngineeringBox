@@ -27,6 +27,8 @@ This project is hotsted in GitHub
 https://github.com/bbmorales/TheEngineeringBox
 
 ********************** VERSION HISTORY ********************** 
+v 1.02 - 30 May 2013
+* 17 new functions
 
 v 1.01 - 06 May 2013
 * Several changes - new functions - minor corrections
