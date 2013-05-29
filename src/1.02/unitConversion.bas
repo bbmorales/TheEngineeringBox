@@ -211,6 +211,30 @@ Public Function barToPa(pressure As Double)
 
 End Function
 
+Public Function PaToPsi(pressure As Double)
+    '*****************************************************
+    ' Purpose: converts from Pa to Psi
+    ' Inputs:
+    '           pressure in Pa
+    ' Returns:   pressure in Psi
+    '*****************************************************
+
+    PaToPsi = pressure / (6.894757 * 10 ^ 3)
+
+End Function
+
+Public Function PsiToPa(pressure As Double)
+    '*****************************************************
+    ' Purpose: converts from Psi to Pa
+    ' Inputs:
+    '           pressure in Psi
+    ' Returns:   pressure in Pa
+    '*****************************************************
+
+    PsiToPa = pressure * (6.894757 * 10 ^ 3)
+
+End Function
+
 '**********************************************************
 'TEMPERATURE UNIT CONVERSION FUNCTIONS
 
@@ -272,7 +296,7 @@ Public Function FahrenheitToKelvin(temperature As Double)
     '*****************************************************
     ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
 
-    FahrenheitToKelvin = (5 / 9) * (temperature + 459.67)
+    KelvinToRankine = (5 / 9) * (temperature + 459.67)
 
 End Function
 
@@ -285,7 +309,7 @@ Public Function FahrenheitToCelsius(temperature As Double)
     '*****************************************************
     ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
 
-    FahrenheitToCelsius = (5 / 9) * (temperature - 32)
+    KelvinToRankine = (5 / 9) * (temperature - 32)
 
 End Function
 
@@ -314,6 +338,18 @@ Public Function CalToJoule(energy As Double)
     ' REVISED IN 23 Mar 2013 - OK - Reference: Perry, 1999
 
     CalToJoule = 4.184 * energy
+
+End Function
+
+Public Function CalToKwh(energy As Double)
+    '*****************************************************
+    ' Purpose: converts energy from Cal to kWh
+    ' Inputs:
+    '           energy in Calories
+    ' Returns:   energy in kWh
+    '*****************************************************
+
+    CalToKwh = 4.184 * 3.6 * 10 ^ 3 * energy
 
 End Function
 
@@ -349,19 +385,36 @@ Public Function JouleToKwh(energy As Double)
     ' Returns:   energy in kWh
     '*****************************************************
 
-    JouleToKwh = (3.6 * 10 ^ 3) ^ -1 * energy
+    KwhToJoule = (3.6 * 10 ^ 3) ^ -1 * energy
 
 End Function
 
-Public Function CalToKwh(energy As Double)
+
+'**********************************************************
+'VISCOSITY UNIT CONVERSION FUNCTIONS
+
+Public Function PasToCentipoise(viscosity As Double)
     '*****************************************************
-    ' Purpose: converts energy from Cal to kWh
+    ' Purpose: converts viscosity from Pa s to centiPoise
     ' Inputs:
-    '           energy in Calories
-    ' Returns:   energy in kWh
+    '           viscosity in Pa s
+    ' Returns:   viscosity in centiPoise
     '*****************************************************
+    ' REVISED IN 29 May 2013
 
-    CalToKwh = 4.184 * 3.6 * 10 ^ 3 * energy
+    PasToCentipoise = 1000 * viscosity
 
 End Function
 
+Public Function centipoiseToPas(viscosity As Double)
+    '*****************************************************
+    ' Purpose: converts viscosity from centiPoise to Pa s
+    ' Inputs:
+    '           viscosity in centiPoise
+    ' Returns:   viscosity in Pa s
+    '*****************************************************
+    ' REVISED IN 29 May 2013
+
+    centipoiseToPas = viscosity / 1000
+
+End Function

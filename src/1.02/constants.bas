@@ -15,6 +15,9 @@ Option Explicit
 '*************************************************************************************************
 
 ' This section declares constants to be used WITHIN the TEB code
+' Pi - [dimensionless]
+Public Const Pi As Double = 3.14159265
+
 ' Standard gravity - SI [m s^-2]
 Public Const gravityConst As Double = 9.80665
 
