@@ -1,21 +1,10 @@
 unit conversions
-* psi to Pa
-* Pa to Psi
-* Liter to M3 (liquid)
-* viscosity conversions
 * density conversions
-* lenght (between SI) conversions
-
+* length (between SI) conversions
 
 Physical properties - Correlations - Auxiliary function
-
-* Terminal velocity - creeping flow
 * Stokes equation (creeping flow)
-* Interfacial Area Density (spherical and nonspherical)
 * Hydraulic diameter (for square or rectangular)
 * Stored energy (mass * cp * delta_temp)
-* Cube volume
 * Pipe surface area
-* Arrhenius equation
 * Hydrostatic pressure
-* High Heating Value correlation fuels

@@ -1,7 +1,6 @@
 The Engineering Box (TEB)
 =================
 Created in 2013 by Bayard Beling Morales - bayard.bmorales@gmail.com
-
 Co-created by Andre C. Contini and Felipe K. Possani
 
 The Engineering Box (TEB) is an standalone add-in for Microsoft Excel that helps engineers and scientist to work faster in building useful technicl spreadsheets.
@@ -27,6 +26,9 @@ This project is hotsted in GitHub
 https://github.com/bbmorales/TheEngineeringBox
 
 ********************** VERSION HISTORY ********************** 
+v 1.03 - 08 Jul 2013
+* 8 new functions
+
 v 1.02 - 30 May 2013
 * 17 new functions
 
