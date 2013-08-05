@@ -21,7 +21,7 @@
 Option Explicit
 ' ************************************************************************************************
 ' DIMENSIONLESS NUMBERS
-' This module constains functions to compute dimensionless numbers
+' This module contains functions to compute dimensionless numbers
 '*************************************************************************************************
 '
 

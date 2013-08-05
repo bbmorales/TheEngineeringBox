@@ -21,7 +21,7 @@
 Option Explicit
 ' ************************************************************************************************
 ' PHYSICAL AND AUXILIARY CONSTANTS
-' This module constains fundamental physical constanst and auxiliary constants
+' This module contains fundamental physical constanst and auxiliary constants
 
 ' DECLARING CONSTANTS
 ' The declaration of constants shall follow the example below:
