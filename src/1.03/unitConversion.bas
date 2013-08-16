@@ -479,3 +479,62 @@ Public Function centipoiseToPas(viscosity As Double)
     centipoiseToPas = viscosity / 1000
 
 End Function
+
+
+
+'**********************************************************
+' FREQUENCY UNIT CONVERSION FUNCTIONS
+
+
+Public Function radPerSecondToHz (frequency As Double)
+    '*****************************************************
+    ' Purpose: converts frequency from radians per second to Hertz
+    ' Inputs:
+    '           frequency in rad s-1
+    ' Returns:   frequency in Hz
+    '*****************************************************
+    ' REVISED IN 16 Aug 2013
+
+    radPerSecondToHz = frequency / (2 * Pi)
+
+End Function
+
+
+Public Function hzToRadPerSecond (frequency As Double)
+    '*****************************************************
+    ' Purpose: converts frequency from Hertz per second to Radians per second
+    ' Inputs:
+    '       frequency in Hz     	
+    ' Returns:  frequency in rad s-1
+    '*****************************************************
+    ' REVISED IN 16 Aug 2013
+
+    hzToRadPerSecond = frequency * (2 * Pi)
+
+End Function
+
+Public Function radPerSecondToRpm (frequency As Double)
+    '*****************************************************
+    ' Purpose: converts frequency from radians per second to revolutions per minute
+    ' Inputs:
+    '       frequency in rad s-1     	
+    ' Returns:  frequency in rpm
+    '*****************************************************
+    ' REVISED IN 16 Aug 2013
+
+    RadPerSecondToRpm = frequency * (60 /  (2 * Pi))
+
+End Function
+
+Public Function rpmToRadPerSecond (frequency As Double)
+    '*****************************************************
+    ' Purpose: converts frequency from revolutions per minute to radians per second
+    ' Inputs:
+    '       frequency in rpm    	
+    ' Returns:  frequency in rad s-1
+    '*****************************************************
+    ' REVISED IN 16 Aug 2013
+
+    rpmToRadPerSecond = frequency / (60 /  (2 * Pi))
+
+End Function
